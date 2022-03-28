@@ -87,6 +87,15 @@ spec:
           volumeMounts:
             - name: wordpress-vol
               mountPath: /var/www
+          resources:
+          resources:
+            requests:
+              memory: "65Mi"
+              cpu: "10m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"              
+         
       volumes:
         - name: wordpress-vol
           persistentVolumeClaim:
