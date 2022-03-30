@@ -91,7 +91,7 @@ public function test_update_user() {
 		wp_update_user( (object) $user_data );
 
 		$user = new WP_User( self::$author_id );
-		$this->assertSame( 'a test user 123', $user->get( 'display_name' ) );
+		$this->assertSame( 'a test user', $user->get( 'display_name' ) );
 
 		$user->display_name = 'some test user';
 		wp_update_user( $user );
