@@ -60,7 +60,7 @@ spec:
       - name: regcred     
       containers:
         - name: wordpress
-          image: bikashrc25/wordpress-main:latest
+          image: sn1-r620-a04-03.puretec.purestorage.com/wordpress/wordpress-master:latest
           ports:
             - containerPort: 80
               name: http-port
